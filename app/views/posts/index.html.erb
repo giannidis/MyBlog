@@ -36,7 +36,8 @@
     <!-- ******HEADER****** --> 
     <header class="header">
         <div class="container">                       
-            <img class="profile-image img-responsive pull-left" src="assets/profile.png" alt="Ioannis Demertzidis" />
+            
+            <%= link_to(image_tag("profile.png", class: "logo", alt: "", title: "Home"), root_path, class: "navbar-brand page-scroll") %>
             <div class="profile-content pull-left">
                 <h1 class="name">Ioannis Demertzidis</h1>
                 <h2 class="desc">Web App Developer</h2>
@@ -73,9 +74,7 @@
                                 <h3 class="title"><a href="mistiko.herokuapp.com" target="_blank">Mistiko - Tell your secret public</a></h3>
                                 <p class="summary"> Co-developer | <span class="sr-only">Kostas kiou:</span><a href="http://www.kostaskiou.me">kostas kiou</a></p>
                                 <div class="featured-image">
-                                    <a href="mistiko.herokuapp.com" target="_blank">
-                                    <img class="img-responsive project-image" src="assets/projects/project-featured.png" alt="project name" />
-                                    </a>
+                                    <%= link_to(image_tag("projects/project-featured.png", class: "img-responsive project-image", alt: "project name", title: "Home"), href="http://mistiko.gr", class: "img-responsive project-image") %>
                                     <div class="ribbon">
                                         <div class="text">New</div>
                                         </div>
@@ -88,52 +87,47 @@
                             </div><!--//item-->
                             <hr class="divider" />
                             <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="http://railstheme.com" target="_blank">
-                                <img class="img-responsive project-image" src="assets/projects/railstheme.png" alt="project name" />
-                                </a>
+                                <hr class="divider" />
+                            <div class="item row">
+
+                            <%= link_to(image_tag("projects/railstheme.png", class: "col-md-4 col-sm-4 col-xs-1", alt: "railstheme", title: "Home"), href="http://railstheme.com", class: "img-responsive project-image")%>
+
+                        
                                 <div class="desc col-md-8 col-sm-8 col-xs-12">
                                     <h3 class="title"><a href="http://railstheme.com/" target="_blank">RailsTheme - Marketplace for premium ROR apps themes</a></h3>
                                     <p>All themes provide a bunch of_handy helpers for use in your views and build things quickly. Easy integrate with popular Gems right out the box, such  kaminari and simple_form ,as devise, will_paginate,..</p>
                                     <p><a class="more-link" href="http://railstheme.com/" target="_blank"><i class="fa fa-external-link"></i>Check It</a></p>
                                 </div><!--//desc-->                          
                             </div><!--//item-->
-                            
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="http://google.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/" target="_blank">
-                                <img class="img-responsive project-image" src="assets/projects/minijobs.png" alt="project name" />
-                                </a>
+
+
+
+
+                            <%= link_to(image_tag("projects/minijobs.png", class: "col-md-4 col-sm-4 col-xs-1", alt: "minijobs", title: "Home"), href="http://railstheme.com", class: "img-responsive project-image")%>
+
+                        
                                 <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="minijobs.herokuapp.com/" target="_blank">Minijobs</a></h3>
-                                    <p>Find the correct people for your minijob.</p>
-                                    <p><a class="more-link" href="http://google.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/" target="_blank"><i class="fa fa-external-link"></i> Check It </a></p>
+                                    <h3 class="title"><a href="http://railstheme.com/" target="_blank">Minijobs - Find the correct people for your minijob.</a></h3>
+                                    <p>All themes provide a bunch of_handy helpers for use in your views and build things quickly. Easy integrate with popular Gems right out the box, such  kaminari and simple_form ,as devise, will_paginate,..</p>
+                                    <p><a class="more-link" href="http://railstheme.com/" target="_blank"><i class="fa fa-external-link"></i>Check It</a></p><a class="btn btn-cta-secondary pull-right" href="http://google.com/" target="_blank"><i class="fa fa-thumbs-o-up"></i> Contribute</a><p class="summary pull-right">* and gain <a href="#">influence</a></p>  
                                 </div><!--//desc-->                          
                             </div><!--//item-->
-                            
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="http://kickstartup.gr/" target="_blank">
-                                <img class="img-responsive project-image" src="assets/projects/axilios.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="kickstartup.gr/" target="_blank">Kickstartup</a></h3>
+
+
+                            <%= link_to(image_tag("projects/axilios.png", class: "col-md-4 col-sm-4 col-xs-1", alt: "kickstartup", title: "kickstartup"), href="http://kickstartup.gr", class: "img-responsive project-image")%> <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="http://kickstartup.gr/" target="_blank">Kickstartup</a></h3>
                                     <p>Professional profile creating platform and skills certification.</p>
-                                    <p><a class="more-link" href="http://kickstartup.gr/" target="_blank"><i class="fa fa-external-link"></i> You can't check it </a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->                            
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="http://ptolemaidaout.gr">
-                                <img class="img-responsive project-image" src="assets/projects/ptolemaidaout.jpg" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="http://ptolemaidaout.gr" target="_blank">Ptolemaidaout - All about nightlife in Ptolemaida</a></h3>
-                                    <p> Photoshootings, news & more! </p>
-                                    <p><a class="more-link" href="http://ptolemaidaout.gr/" target="_blank"><i class="fa fa-external-link"></i> You can't check it </a> Oh wait..You can check <a class="more-link" href="https://facebook.com/ptolemaidaout/" target="_blank"> here </a></p>
-                                </div><!--//desc-->                          
+                                    <p><a class="more-link" href="http://railstheme.com/" target="_blank"><i class="fa fa-external-link"></i>You can't check It</a>
+                                                       
                             </div><!--//item-->
-                            
+
+
+
+                                                    
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
-                
+                <br><br><br><br>
                 <section class="github section">
                     <div class="section-inner">
                         <h2 class="heading">My GitHub</h2>
@@ -144,6 +138,14 @@
                         
                     </div><!--//secton-inner-->
                 </section><!--//section-->
+
+                                            <%= link_to(image_tag("projects/ptolemaidaout.jpg", class: "col-md-4 col-sm-4 col-xs-1", alt: "ptolemaidaout", title: "ptolemaidaout"), href="http://ptolemaidaout.gr", class: "img-responsive project-image")%> <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="http://ptolemaidaout.gr/" target="_blank">Ptolemaidaout</a></h3>
+                                    <p>All about nightlife in Ptolemaida</p>
+                                    <p><a class="more-link" href="http://railstheme.com/" target="_blank"><i class="fa fa-external-link"></i>You can't check It</a>
+                                                       
+                            </div><!--//item-->
+                            <br><br><br><br>
 
                                 <section class="experience section">
                     <div class="section-inner">
